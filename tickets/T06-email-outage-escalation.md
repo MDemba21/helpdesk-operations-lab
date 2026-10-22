@@ -1,17 +1,17 @@
 # T06 – Finance email outage and escalation
 
-**Short description:** Finance department not receiving email
+**Short description:** Finance department not receiving inbound emails
 
-**Description:** Robert Kim (Finance Manager) reported that no one in the Finance department has received email since this morning. External senders are receiving bounce-back messages.
+**Description:** Robert Kim (Finance Manager) reported that no one in the Finance department has received email since this morning. Senders are receiving bounce-back messages.
 
 | Field | Value |
 |---|---|
-| Incident | [INC0010006] |
+| Incident | INC0010006 |
 | Caller | Robert Kim (Finance Manager) |
 | Category | Software |
 | Impact / Urgency | 1 – High / 1 – High |
 | Priority | 1 – Critical |
-| SLA | P1 Resolution – 4 hours, 24x7 ([met]) |
+| SLA | P1 Resolution – 4 hours, 24x7 (met) |
 | Assigned group | Service Desk - Tier 1 → Service Desk - Tier 2 |
 
 ## Request
@@ -20,7 +20,7 @@
 ## Triage (Tier 1)
 P1 – Critical. Full department impact.
 
-- **Scope:** sent test emails from an external account to two Finance users. Both were rejected with a non-delivery report (NDR). A non-Finance user received email normally, so the issue was isolated to Finance recipients.
+- **Scope:** sent test emails to two Finance users. Both were rejected with a non-delivery report (NDR). A non-Finance user received email normally, so the issue was isolated to Finance recipients.
 - **Service health:** Microsoft 365 admin center → Health → Service health showed no active Exchange Online incidents or advisories.
 - **Conclusion:** no Microsoft-side outage; cause unknown after standard checks.
 
@@ -45,9 +45,16 @@ Ran a message trace on a Finance recipient for the external test emails. Status:
 3. Sent a new external test email to a Finance user and confirmed delivery.
 
 ## Verification
-New test email delivered to the Finance user's inbox; message trace shows Delivered.
+New test email (sent after the rule was deleted) arrived in Robert Kim's inbox.
 
 ## Resolution notes
 Cause: a mail flow rule ("Temp vendor filter") was configured to block and reject all inbound email to Finance users.
 Fix: identified the rule through message trace, disabled it to restore delivery, then deleted it. Confirmed delivery with a new test message.
 Prevention: require mail flow rule changes to go through a change request with a documented purpose, owner, and expiration date.
+
+## Screenshots
+![Bounce-back received by the sender: blocked by mail flow rule](../screenshots/T06-00-ndr.png)
+![Mail flow rule "Temp vendor filter" conditions and action](../screenshots/T06-01-mail-flow-rule.png)
+![Message trace: not delivered, rejected by mail flow rule Temp vendor filter](../screenshots/T06-02-message-trace.png)
+![Incident activity: Tier 2 diagnosis, resolution, and escalation handoff](../screenshots/T06-03-incident-activity.png)
+![After the fix: test email delivered to Robert Kim's inbox](../screenshots/T06-04-delivery-restored.png)
