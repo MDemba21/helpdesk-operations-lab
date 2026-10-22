@@ -7,8 +7,8 @@ Defines what Tier 1 resolves, when an incident is escalated to Tier 2, and how h
 | Priority | Example | Resolution target | Clock |
 |---|---|---|---|
 | P1 – Critical | Outage affecting a department or more | 4 hours | 24x7 |
-| P2 – High | Single user fully blocked from working | 8 hours | 24x7 |
-| P3 – Moderate | User impaired, workaround exists | 3 business days | 8-5 weekdays |
+| P2 – High | Urgent request with a same-day deadline (e.g. termination) | 8 hours | 24x7 |
+| P3 – Moderate | Single user blocked or impaired | 3 business days | 8-5 weekdays |
 | P4 – Low | Requests and minor issues | 5 business days | 8-5 weekdays |
 
 ## Tier 1 scope
@@ -18,6 +18,7 @@ Tier 1 resolves:
 - Onboarding and offboarding per checklist
 - Group, license, and shared mailbox access requests
 - Device compliance issues with a known fix
+- Sign-in blocks with a known cause, after confirming with the user's manager
 
 ## Escalation triggers
 Reassign to **Service Desk - Tier 2** when any of the following apply:
@@ -38,10 +39,11 @@ Before reassigning, work notes must include:
 Tier 1 informs the caller that the incident was escalated and when to expect the next update.
 
 ## Bridge calls
-- **When:** any P1 affecting multiple users
+- **When:** any P1 not resolved within 30 minutes of escalation
 - **Who:** Tier 1 analyst, Tier 2 engineer, lead of the affected team
 - **During:** Tier 1 records timeline and decisions
 - **After:** log in work notes: start and end time, attendees, summary, next update time
+- **If not needed:** log a work note stating the P1 was resolved within 30 minutes of escalation and no bridge was opened
 
 ## Closure
 Before resolving, confirm the fix with the caller and record the root cause and resolution in resolution notes. For P1 incidents, include prevention steps.
