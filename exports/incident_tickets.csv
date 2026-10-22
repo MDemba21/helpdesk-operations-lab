@@ -1,0 +1,8 @@
+"number","opened_at","short_description","caller_id","priority","state","category","assignment_group","assigned_to","sys_updated_on","sys_updated_by"
+"INC0010001","2026-10-20 14:40:13","New Hire Account and finance@ mail access for Jordan Lee","Robert Kim","4 - Low","Resolved","Inquiry / Help","Service Desk - Tier 1","","2026-10-20 15:23:51","admin"
+"INC0010002","2026-10-21 11:25:36","Caller forgot password and entered it incorrectly a few times and got locked out of their account.","Ben Carter","3 - Moderate","Resolved","Password Reset","Service Desk - Tier 1","","2026-10-21 12:04:47","admin"
+"INC0010003","2026-10-21 19:22:11","Unable to complete MFA – new phone","Tasha Greene","3 - Moderate","Resolved","Inquiry / Help","Service Desk - Tier 1","","2026-10-21 20:00:05","admin"
+"INC0010004","2026-10-21 20:08:16","Laptop flagged noncompliant in Intune","Hannah Brooks","3 - Moderate","Resolved","Hardware","Service Desk - Tier 1","","2026-10-21 21:21:12","admin"
+"INC0010005","2026-10-21 21:21:19","Termination offboarding – Chris Morgan, HR (effective 5:00 PM)","Dana Whitefield","2 - High","Resolved","Inquiry / Help","Service Desk - Tier 1","","2026-10-21 21:56:49","admin"
+"INC0010006","2026-10-21 21:57:00","Finance department not receiving inbound emails","Robert Kim","1 - Critical","Resolved","Software","Service Desk - Tier 2","","2026-10-21 22:37:41","admin"
+"INC0010007","2026-10-22 10:31:42","User unable to access email – blocked by Conditional Access","Priya Shah","3 - Moderate","Resolved","Software","Service Desk - Tier 1","","2026-10-22 12:34:32","admin"
