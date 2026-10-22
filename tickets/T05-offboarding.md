@@ -1,17 +1,17 @@
 # T05 – Termination offboarding
 
-**Short description:** Termination: Chris Morgan, effective 5:00 PM today
+**Short description:** Termination offboarding – Chris Morgan, HR (effective 5:00 PM)
 
 **Description:** Dana Whitfield (HR Manager) reported that Chris Morgan (HR Generalist) is leaving the company today, effective 5:00 PM. All access must be removed, and Dana needs access to Chris's email.
 
 | Field | Value |
 |---|---|
-| Incident | [INC0010005] |
+| Incident | INC0010005 |
 | Caller | Dana Whitfield (HR Manager) |
 | Category | Inquiry / Help |
 | Impact / Urgency | 2 – Medium / 1 – High |
 | Priority | 2 – High |
-| SLA | P2 Resolution – 8 hours, 24x7 ([met]) |
+| SLA | P2 Resolution – 8 hours, 24x7 (met) |
 | Assigned group | Service Desk - Tier 1 |
 
 ## Request
@@ -38,3 +38,8 @@ Offboarding completed per checklist by the 5:00 PM deadline. Access removed, ema
 
 Automatic reply text:
 > Thank you for your message. Chris Morgan is no longer with the company. For HR matters, please contact Dana Whitfield at dana.whitfield@ExamLabPractice2435.onmicrosoft.com.
+
+## Screenshots
+![Chris Morgan's account status: Disabled](../screenshots/T05-01-account-disabled.png)
+![Mailbox converted to shared, with Full Access delegated to Dana Whitfield](../screenshots/T05-02-shared-mailbox-delegation.png)
+![Intune: no devices enrolled for the user](../screenshots/T05-03-intune-devices.png)
