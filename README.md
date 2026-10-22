@@ -20,6 +20,11 @@ Tier 1 support for a fictional 15-person company with HR, Finance, and IT depart
 - ServiceNow: Tier 1 and Tier 2 assignment groups, caller records, and four resolution SLAs (P1/P2 on a 24x7 clock, P3/P4 on business hours)
 - [Escalation SOP](sop/escalation-sop.md)
 
+![Users created in Entra ID](screenshots/P1-01-users-created.png)
+![E5 licenses assigned through SG-AllStaff](screenshots/P1-02-group-licensing.png)
+![ServiceNow SLA definitions](screenshots/P2-01-sla-definitions.png)
+![ServiceNow assignment groups](screenshots/P2-02-assignment-groups.png)
+
 ## Tickets
 | # | Incident | Ticket | Priority | Tools |
 |---|---|---|---|---|
